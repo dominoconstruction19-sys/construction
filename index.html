@@ -35,7 +35,7 @@
             position: relative;
         }
 
-        /* ОНОВЛЕНО: Яскравіший фон будівельного майданчику */
+        /* ГЋГЌГЋГ‚Г‹Г…ГЌГЋ: ГџГ±ГЄГ°Г ГўВіГёГЁГ© ГґГ®Г­ ГЎГіГ¤ВіГўГҐГ«ГјГ­Г®ГЈГ® Г¬Г Г©Г¤Г Г­Г·ГЁГЄГі */
         body::before {
             content: '';
             position: fixed;
@@ -50,7 +50,7 @@
             background-position: center;
             background-attachment: fixed;
             z-index: -1;
-            opacity: 0.6; /* Збільшена прозорість для кращої видимості */
+            opacity: 0.6; /* Г‡ГЎВіГ«ГјГёГҐГ­Г  ГЇГ°Г®Г§Г®Г°ВіГ±ГІГј Г¤Г«Гї ГЄГ°Г Г№Г®Вї ГўГЁГ¤ГЁГ¬Г®Г±ГІВі */
         }
 
         .container {
@@ -377,7 +377,7 @@
         }
 
         .service-list li::before {
-            content: "•";
+            content: "В•";
             color: var(--accent);
             font-weight: bold;
             display: inline-block;
@@ -499,7 +499,7 @@
             opacity: 0.8;
         }
 
-        /* Projects Section - ВИПРАВЛЕНО */
+        /* Projects Section - Г‚Г€ГЏГђГЂГ‚Г‹Г…ГЌГЋ */
         .projects {
             background: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(10px);
@@ -554,7 +554,7 @@
             transform: translateY(0);
         }
 
-        /* Спливаючі вікна для проектів */
+        /* Г‘ГЇГ«ГЁГўГ ГѕГ·Ві ГўВіГЄГ­Г  Г¤Г«Гї ГЇГ°Г®ГҐГЄГІВіГў */
         .project-modal {
             display: none;
             position: fixed;
@@ -640,7 +640,7 @@
             border: none;
         }
 
-        /* Contact Section - ВИПРАВЛЕНО */
+        /* Contact Section - Г‚Г€ГЏГђГЂГ‚Г‹Г…ГЌГЋ */
         .contact-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -1172,7 +1172,7 @@
         </div>
     </section>
 
-    <!-- Projects Section - ВИПРАВЛЕНО -->
+    <!-- Projects Section - Г‚Г€ГЏГђГЂГ‚Г‹Г…ГЌГЋ -->
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-title">
@@ -1208,7 +1208,7 @@
         </div>
     </section>
 
-    <!-- Модальні вікна для проектів -->
+    <!-- ГЊГ®Г¤Г Г«ГјГ­Ві ГўВіГЄГ­Г  Г¤Г«Гї ГЇГ°Г®ГҐГЄГІВіГў -->
     <div id="modal1" class="project-modal">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('modal1')">&times;</button>
@@ -1289,7 +1289,7 @@
         </div>
     </section>
 
-    <!-- Contact Section - ВИПРАВЛЕНО -->
+    <!-- Contact Section - Г‚Г€ГЏГђГЂГ‚Г‹Г…ГЌГЋ -->
     <section id="contact">
         <div class="container">
             <div class="section-title">
@@ -1452,7 +1452,7 @@
     </div>
 
     <script>
-        // Функції для модальних вікон проектів
+        // Г”ГіГ­ГЄГ¶ВіВї Г¤Г«Гї Г¬Г®Г¤Г Г«ГјГ­ГЁГµ ГўВіГЄГ®Г­ ГЇГ°Г®ГҐГЄГІВіГў
         function openModal(modalId) {
             document.getElementById(modalId).style.display = 'block';
             document.body.style.overflow = 'hidden';
@@ -1463,7 +1463,7 @@
             document.body.style.overflow = 'auto';
         }
 
-        // Закриття модального вікна при кліку поза ним
+        // Г‡Г ГЄГ°ГЁГІГІГї Г¬Г®Г¤Г Г«ГјГ­Г®ГЈГ® ГўВіГЄГ­Г  ГЇГ°ГЁ ГЄГ«ВіГЄГі ГЇГ®Г§Г  Г­ГЁГ¬
         window.onclick = function(event) {
             const modals = document.getElementsByClassName('project-modal');
             for (let modal of modals) {
@@ -1565,4 +1565,5 @@
         });
     </script>
 </body>
+
 </html>
